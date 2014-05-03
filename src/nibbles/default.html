@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="Scripts/gametypes.js"></script>
+    <script type="text/javascript" src="Scripts/common.js"></script>
+    <script type="text/javascript" src="Scripts/gameSettings.js"></script>
+    <script type="text/javascript" src="Scripts/nibbles.js"></script>
+    <script type="text/javascript" src="Scripts/game.js"></script>
+    <script type="text/javascript">
+        function playButton_onClick() {
+            game.instance.start();
+        }
+    </script>
+</head>
+<body>
+    <button id="playButton" onclick="playButton_onClick();">Guess the name of this old ass game!</button>
+    <div>
+        <canvas id="gameCanvas" tabindex="0" />
+    </div>
+</body>
+</html>
